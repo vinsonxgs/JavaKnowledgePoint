@@ -1,0 +1,30 @@
+git config --global user.name "vinsonxgs"
+git config --global user.email "2576822831@qq.com"
+
+初始化版本库
+git init
+添加文件到版本库
+git add
+git commit
+查看仓库状态
+git status
+清空暂存区的文件
+git reset HEAD <file>
+清空暂存区文件后恢复到工作区
+git checkout -- <file>
+查看提交日志
+git log
+git回滚到指定版本
+git reset --hard <commitid>
+git删除暂存区和工作区的文件
+git rm <file>
+
+git远程仓库
+ssh -keygen -t rsa -C "2576822831@qq.com"
+添加远程仓库
+git remote add origin git@github.com:javaprogram/demo.git
+git pull origin master --allow-unrelated-histories
+git push -u origin master
+
+克隆仓库
+git clone xxx
