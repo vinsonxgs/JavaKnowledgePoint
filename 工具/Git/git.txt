@@ -35,3 +35,15 @@ git tag
 git tag name
 指定提交信息
 git tag -a name -m "comment"
+删除标签
+git tag -d name
+标签发布
+git push origin name
+
+查看所有分支
+git branch
+创建一个分支
+git branch dev
+切换分支
+git checkout dev
+
