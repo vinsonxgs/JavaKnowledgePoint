@@ -1,0 +1,39 @@
+谈谈你对Java的理解：
+平台无关性；
+GC（垃圾回收机制）；
+面向对象；
+语言特性；
+类库；
+异常处理；
+
+Java如何实现平台无关；
+编译期；
+运行时；
+
+.java -> .class -> jvm
+Java源码首先被编译成字节码，再由不同的平台的jvm进行解析，Java语言在不同的平台上运行
+时不需要进行重新编译，Java虚拟机在执行字节码的时候，把字节码转换成具体平台上的机器
+指令；
+
+javap查看字节码文件：
+javap -c xxx 对代码进行反编译；
+
+jvm如何加载.class文件：
+jvm就是内存的虚拟机，jvm的结构，
+class loader,runtime data area,execution engine,native interface;
+
+class loader:依据特定格式，加载class文件到内存；
+execution engine:对命令进行解析；
+native interface:融合不同开发语言的原生库为Java所用；
+runtime data area:jvm内存空间结构模型；
+
+类从编译到执行的过程：
+编译器将.java源文件编译为.class字节码文件；
+classloader将字节码转换为jvm中的class对象；
+jvm利用class对象实例化为单个对象；
+
+谈谈classloader：
+
+classloader在Java中有着非常重要的作用，它主要工作在class装载的加载阶段，其主要作用是从
+系统外部获得class二进制数据流。它是Java的核心组件，所有的class都是由classloader进行加载的，
+classloader负责通过将class文件里的二进制数据流装载进系统，然后交给Java虚拟机进行连接，初始化等操作。
